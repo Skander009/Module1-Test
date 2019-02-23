@@ -43,9 +43,9 @@ function countSeparatedWords(stringToCountWords){
     var stringCharacters = string.split('');
     var result = true;
     stringCharacters.forEach(function(character) {
-       if (character!=' ' && character!='' && character!=','){
+       if (character!=' ' && character!='' && character!=',')
          result = false;
-    }});
+    });
     return result;
   }
 
@@ -53,7 +53,7 @@ function countSeparatedWords(stringToCountWords){
     var separatedWordsArray = [];
     if (!isStringEmptyOrWhiteSpace(stringToSplit)){
       separatedWordsArray = stringToSplit.split(',');
-    separatedWordsArray = removeWhiteSpacesWord(separatedWordsArray)
+     separatedWordsArray = removeWhiteSpacesWord(separatedWordsArray)
     }
     return separatedWordsArray;
   }
@@ -63,7 +63,6 @@ function countSeparatedWords(stringToCountWords){
         if (isStringEmptyOrWhiteSpace(word))
           words.splice(words.indexOf(word), 1);
       });
-      console.log(words);
     return words;
   }
 
